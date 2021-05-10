@@ -19,5 +19,23 @@
 
 	$(document).ready( function() {
 		process_section_backgrounds();
+
+		$('#spine').keydown(function (e) {
+
+			if( e.keyCode == 27 )  // the enter key code
+			 {
+			   $('#shelve').trigger( 'click' );  
+			 }
+		});
+		/*$('#shelve').keydown(function (e) {
+			if( e.keyCode == 13)  // the enter key code
+			 {
+			   $('#shelve').trigger( 'click' ); 
+			 }
+		});*/
 	});
+
+
 }(jQuery,window));
+
+
